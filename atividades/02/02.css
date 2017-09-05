@@ -1,0 +1,44 @@
+body{
+    background: #F8F8F8;
+}
+p{
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+a{
+    color: black;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    padding-block-end: 5px;
+    margin: 20px 15px 15px 15px;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin: 20px 30px 20px 30px;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    margin: 20px 30px 20px 30px;
+}
+ol{
+    font-size: 18px;
+    font-family: 'Slabo 27px', serif;
+}
+form{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    align-items: center;
+}
