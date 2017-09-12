@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type: "text/css" href="03.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Slabo+27px|Ubuntu|Roboto">
+    <title>Blog do JavaScript</title>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Why we moved from Angular 2 to Vue.js (and why we didn’t choose React)</h1>
+            <p>By Luis Elizondo</p>
+            <img src="https://pagekit.com/storage/blog/2015/vue10.jpg">
+        </header>
+        <section>
+            <p>
+                At Rever (www.reverscore.com) we just released a new version of our web client using Vue.js. After 641 commits and 16 weeks
+                of intense development here we are, very proud of a decision we took a while ago.
+            </p>
+            <p>
+                8 months ago our web client was using Angular 2. To be precise, it was using Angular 2 beta 9. This was a product written
+                by an outsourcing company and we were never fully happy with it on many levels, from UX/UI to the architecture,
+                and to some level, with Angular 2 itself.
+            </p>
+            <p>
+                Before I continue, I admit that Angular 2 beta 9 is a different product than Angular 2.0, but that was exactly one of the
+                problems. From beta9 to 2.0.0 there are 8 beta versions, 8 RC and the 2.0.0 version itself, 17 versions to
+                upgrade in total. We did try to upgrade from beta 9 to 2.0.0 but too many things broke that made the upgrade
+                non trivial. Also, about the same time we were questioning Angular 2 as our framework of choice, the Angular
+                team decided to start working on Angular 4. While they promised it wouldn’t be too drastic, that meant that
+                by the time we finished upgrading to Angular 2.0.0 we were going to need another upgrade. What a waste of
+                time and limited resources.
+            </p>
+            <p>
+                The main thing we didn’t like and we still don’t like about Angular 2 is Typescript. I know Angular 2 can be used with Javascript
+                but again, the decision to use Typescript was already taken and from what I understand, using pure Javascript
+                with Angular 2 is not the ideal way you should be using Angular 2. In any case, getting rid of Typescript
+                meant a full rewrite of the project.
+            </p>
+            <p>
+                I didn’t feel Typescript added substantial value and even worse, we noticed that our coding speed was reduced. With Typescript
+                things that were really easy to do on Javascript like defining a simple object were more complicated to do
+                on Typescript. I highly recommend you to read the following articles before you start using Typescript. It
+                is not the right solution for everyone.
+            </p>
+            <a href="https://medium.com/javascript-scene/the-shocking-secret-about-static-types-514d39bf30a3">The Shocking Secret About Static Types</a>
+            <a href="https://medium.com/javascript-scene/angular-2-vs-react-the-ultimate-dance-off-60e7dfbc379c">Angular 2 vs React: The Ultimate Dance Off</a>
+            <p>
+                I still remember how easy to work with Angular 1 was, it certainly had it’s own problems, but it was nice to work with it
+                compared to other frameworks, something that Angular 2 lost somewhere on the way. My conclusion about Angular
+                2 was simple, <b>the only thing Angular 1 and 2 share in common is the name, they are completely different frameworks.</b>
+            </p>
+            <p>
+                So consider that we had 17 versions to upgrade on a non-tested system, a lot of pressure from the business to write new features,
+                lots of bugs and poorly written code, the original developers weren’t on the team anymore, only one developer
+                (me) at the time with many other responsibilities, Typescript, problems with finding the right documentation
+                since I was using a beta, and Angular 2 moving to version 4. The list of negatives started to accumulate
+                very rapidly.
+            </p>
+            <p>
+                We made a decision, if we were going to spend that much time upgrading, we needed to see if we had other options first. And
+                we did.
+            </p>
+        </section>
+    </article>
+    <article>
+        <section>
+            <h2>
+                React
+            </h2>
+            <p>
+                The first obvious choice was react, because well, everybody is doing it and the ones who are not, are talking about it. So
+                that was one option, certainly knowing that Facebook is behind it, helps. However, React itself is not a
+                framework, you need to add extra stuff to make it shine.
+            </p>
+        </section>
+    </article>
+    <article>
+        <section>
+            <h2>
+                Vue.js
+            </h2>
+            <p>
+                Vue.js was a new player, I never heard about it before although they just released version 2 back when we started to look
+                at different options. At first it caught our attention, but it looked risky.
+            </p>
+        </section>
+        <section>
+
+            <h3>
+                Decision process
+            </h3>
+            <p>
+                We first started to define what our decision points were going to be. We knew the framework of our dreams would need to have
+                the following:
+            </p>
+            <ol>
+                <li>It should be stable</li>
+                <li>Backed by a strong community or some big players</li>
+                <li>Good documentation or lots of questions on StackOverflow</li>
+                <li>Easy to learn</li>
+                <li>Integration with Bootstrap</li>
+                <li>Small size</li>
+                <li>Ideally it would allow us to reuse code</li>
+                <li>Coding speed test should be increased</li>
+                <li>Reactivity</li>
+                <li>Component based</li>
+            </ol>
+            <p>
+                After having our decision points decided, I had to get my hands dirty, so I gave both React and Vue.js a couple of days each
+                to review each decision point that wasn’t going to be answered by Google. Since I knew nothing about any
+                of them, at the end of two days I would reevaluate how far I got into rewriting some parts of the actual
+                project we were going to migrate.
+            </p>
+            <p>
+                The parts I chose to rewrite were:
+            </p>
+            <ol>
+                <li>Some basic API calls</li>
+                <li>Two layouts for two different pages</li>
+                <li>Reactivity for user related stuff</li>
+                <li>Login Forms and some content forms</li>
+                <li>One bootstrap modal</li>
+            </ol>
+            <p>
+                I was surprised by how far I got with Vue.js, in a couple of days I actually had a proof of concept to show up to the rest
+                of the team and to my CTO. I got a good understanding of the basic concepts of Vue.js, defined a good and
+                extendable architecture but most importantly I really enjoyed the experience of writing code with it and
+                I felt I was doing it faster than with React.
+            </p>
+            <p>
+                React was a lot harder than I thought, choosing between Redux and MobX is more problematic than having one option that is
+                well integrated with the framework like Vue.js and Vuex do. This is simple because when having no experience
+                with a framework, it gives you more confidence knowing than a framework has an official library for doing
+                something. By the way, I felt that reactivity was easier with Vuex than with Redux but probably that’s just
+                a perception, like all learning curves.
+            </p>
+            <p>
+                JSX was also a problem since we could not reuse HTML code and Vue.js did allow us to do it to some extent. Vue files are
+                actually pretty good to work with since I don’t like inline templates. React mixes both JSX/HTML with JS
+                code which I just don’t like since I strongly believe in separation of concerns and it looks ugly IMHO.
+            </p>
+        </section>
+        <section>
+            <h3>Coding Speed</h3>
+            <p>
+                Coding speed was an area Vue.js won by far, not having to learn JSX was of huge help. This speed was later confirmed when
+                another developer joined the project and was contributing to the project in a matter of hours after a training
+                session of about 1 hour.
+            </p>
+            <p>
+                This was extremely important for us and you can see it right away by opening a vue file. It contains a template section with
+                HTML and tags that look similar to Angular 1 so if you did some Angular 1 it will be really familiar. A vue
+                file also has a styles and pure javascript sections where you actually use javascript and you only need to
+                learn a few things that about Vue.js to fully understand them. Understanding Vue.js properties like methods,
+                computed, properties, data and created takes you to about 90% of what you need to understand to start coding,
+                really easy.This was extremely important for us and you can see it right away by opening a vue file. It contains
+                a template section with HTML and tags that look similar to Angular 1 so if you did some Angular 1 it will
+                be really familiar. A vue file also has a styles and pure javascript sections where you actually use javascript
+                and you only need to learn a few things that about Vue.js to fully understand them. Understanding Vue.js
+                properties like methods, computed, properties, data and created takes you to about 90% of what you need to
+                understand to start coding, really easy.
+            </p>
+        </section>
+        <section>
+            <h3>Documentation</h3>
+            <p>
+                To have proper speed we needed good documentation and Vue.js documentation is superb. Guides, examples, questions and API
+                are documented really well and cover all of the doubts we found during development. We were afraid to find
+                Chinese documentation for many of the questions we would had but that was not the case, everything was available
+                in English.
+            </p>
+        </section>
+        <section>
+            <h3>Asking around</h3>
+            <p>
+                Vue.js looked really good after more than a week of consideration but to my surprise, asking around was useless, since no
+                one had used Vue.js before, the only comment I got was in the order of “looks cool but I haven’t used it”.
+                React took the most mentions and Angular 2 came in a distant second place.
+            </p>
+            <p>
+                I started to look for local talent with Vue.js experience and I did find some who were really good so I started to think
+                that I was not alone, my social techy circle was probably too small and I shouldn’t play enough attention
+                to the fact that I didn’t know anyone in person working with Vue.js on production.
+            </p>
+        </section>
+        <section>
+            <h3>Mobile</h3>
+            <p>
+                At the time we were thinking about Vue.js vs React, we were also considering rewriting our mobile app and React Native looked
+                like a really good choice. That was a big plus for React since Vue.js didn’t have anything remotely stable
+                that resembles what React Native is trying to do, so the possibility of reusing code between the web and
+                app clients was a huge plus, but I decided that I wasn’t going to consider possibilities that might or might
+                not happen. After all, from my experience, with Node.js I reuse a really insignificant amount of code between
+                the browser and the server.At the time we were thinking about Vue.js vs React, we were also considering rewriting
+                our mobile app and React Native looked like a really good choice. That was a big plus for React since Vue.js
+                didn’t have anything remotely stable that resembles what React Native is trying to do, so the possibility
+                of reusing code between the web and app clients was a huge plus, but I decided that I wasn’t going to consider
+                possibilities that might or might not happen. After all, from my experience, with Node.js I reuse a really
+                insignificant amount of code between the browser and the server.
+            </p>
+        </section>
+        <section>
+            <h3>Licensing</h3>
+            <p>
+                At the time I write this, there is great amount of discussion because Facebook changed the React license to BSD+Patents.
+                According to Facebook, this license is meant to protect them from patent trolls. This was not primordial
+                in our decision making process but I’m glad we didn’t go the React way since any noise related to Licenses
+                is not a noise you want to hear.
+            </p>
+            <p>
+                In the end, Facebook being behind React might become a liability for the project instead of a strength, that is why it is
+                usually better to have independent foundations or organizations in charge of a successful Open Source Software
+                project. Facebook should do the right thing, take IBM as an example, when IBM bought Strongloop, they donated
+                Express.js to the Node.js foundation where such an important software belongs. Pressure from the community
+                and willingness from IBM to ensure the continuity of the software made it happen. Twitter is another good
+                example, they released Bootstrap under the very permissive MIT License and no one is talking about License
+                problems with Bootstrap
+            </p>
+        </section>
+        <section>
+            <h3>Final Words</h3>
+            <p>
+                Out of the many web pages I researched before making a decision, one graph caught my attention, the developer satisfaction
+                on The state of Javascript survey that Sacha Greif @sachagreif does every year. I admit, as the author does,
+                that is not scientific survey but it does offer a good amount of information and this was later confirmed
+                by our decision points when we had a clearer picture, specially about Vue.js since we knew nothing about
+                it at the start of our research. You can read The State of Javascript on the following link.
+            </p>
+            <a href="https://medium.com/@sachagreif/the-state-of-javascript-front-end-frameworks-1a2d8a61510">The State Of JavaScript: Front-End Frameworks</a>
+        </section>
+    </article>
+    <article>
+        <p>
+            AQUI DEVERIA ESTAR O DESENHO DO BONECO
+        </p>
+    </article>
+    <article>
+        <h2>Vídeos sobre Vue.js</h2>
+        <iframe src="https://www.youtube.com/embed/CRMKpfxhY7Y"></iframe>
+        <iframe src="https://www.youtube.com/embed/QD8U483nTIk"></iframe>
+    </article>
+    <article>
+        <h3>Cadastre-se</h3>
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+            <div class="cadastro">
+                Nome: <input type="text" name="nome" id="cadastro" maxlength="15">
+            </div>
+            <div class="cadastro">
+                Não editável >> <input type="text" name="" readonly>
+            </div>
+            <div class="cadastro">
+                <p>Escolha suas áreas de interesse</p>
+                Back-end <input type="checkbox" name="caixadechecagem" id="Teste">
+                Front-End <input type="checkbox" name="caixadechecagem" id="Teste">
+                Data-Base <input type="checkbox" name="caixadechecagem" id="Teste">
+                AI <input type="checkbox" name="caixadechecagem" id="Teste">
+            </div>
+            <div class="cadastro">
+                <p>Qual o seu curso? </p>
+                Ciência da Computação <input type="radio" name="" id="cc">
+                Design Digital <input type="radio" name="" id="dd">
+                Engenharia da Computação <input type="radio" name="" id="ec">
+                Engenharia de Software <input type="radio" name="" id="es">
+            </div>
+            <div class="cadastro">
+                Escolha o valor do seu salário como programador <input type="number" name="" id="" min="25000" max="30000">
+            </div>
+        </form>
+    </article>
+</body>
+
+</html>

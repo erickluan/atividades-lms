@@ -1,0 +1,68 @@
+body{
+    background: #00c180;
+}
+p{
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    padding: 15px 50px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+a{
+    color: #3e2723;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    display: block;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.6rem;
+    padding-block-end: 5px;
+    margin: 20px 15px 15px 15px;
+    color: white;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.1rem;
+    margin: 20px 30px 5px 50px;
+    color: white;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    margin: 20px 30px 5px 50px;
+    color: #33475f;
+}
+ol{
+    font-size: 18px;
+    font-family: 'Slabo 27px', serif;
+    margin: 10px 25px 10px 60px;
+}
+form{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    align-items: center;
+}
+iframe{
+    height: 100%;
+    margin: 50px;
+    display: block;
+}
+input{
+    font-family: 'Roboto', sans-serif;
+}
+.cadastro{
+    margin: 10px 60px 10px 80px;
+}
+img{
+    height: 50%;
+    width: 75vw;
+    margin: 0px;
+}
+header{
+    margin: 70px 30px 0px 30px;
+}
