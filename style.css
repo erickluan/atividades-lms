@@ -8,7 +8,7 @@ a{
     float: left;
 }
 body{
-    background: #39E1B1;
+    background: #f1f5c8;
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,18 +19,18 @@ h1{
     display: inline;
 }
 a.atividades{
-    background: #4A4E7A ;
+    background: #1A237E ;
     width: 98vw;
     height: 30vh;
 }
 
 a.provas{
-    background-color: #4E5DC4 ;
+    background-color: #FFAB40 ;
     width: 98vw;
     height: 30vh;
 }
 a.seminario{
-    background-color: #6983E4;
+    background-color: #FF5252;
     width: 98vw;
     height: 30vh;
 }
