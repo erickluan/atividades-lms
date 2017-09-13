@@ -1,4 +1,50 @@
-p{
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    font-family: 'Oswald', sans-serif;
     font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-superior{
+    background-color: #a30000;
+    overflow: auto;
+}
+.nav-superior > ul {
+    list-style: none;
+}
+.nav-superior > ul > li > .dropdown > .dropdown-button > a, .dropdown-content > ul > li > a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+}
+.dropdown{
+    float: left;
+}
+.dropdown-content{
+    position: absolute;
+    background-color: #a30000;
+    width: 150px;
+    display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown .dropdown-button{
+    float:none;
+}
+
+.nav-superior > ul > li > a:hover, .dropdown .dropdown-button:hover{
+    background-color: #6d0000;
+}
+
+.dropdown-content > ul{
+    list-style: none;
+}
+
+.dropdown-content > ul > li > a:hover{
+    background-color: #6d0000;
 }
