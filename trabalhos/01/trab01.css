@@ -27,7 +27,7 @@ body{
 .menu-superior > .dropdown > .dropdown-button > .dropdown-content > ul > li > a, .dropdown-button > a {
     color: #ffffff;
     display: block;
-    font-family: 'Josefin Slab';
+    font-family: 'Josefin Slab', serif;
     padding: 20px;
     text-decoration: none;
 }
@@ -72,7 +72,7 @@ body{
     text-align: center;
 }
 .nav-lateral-esquerda ul li a{
-    font-family: 'Open Sans Condensed';
+    font-family: 'Open Sans Condensed', sans-serif;
     padding: 0 15px 0 15px;
     text-align: center;
 }
@@ -92,12 +92,12 @@ body{
 }
 .bar-lateral-direita h1{
     color: yellow;
-    font-family: 'Open Sans Condensed';
+    font-family: 'Open Sans Condensed', sans-serif;
     font-style: italic; 
     font-size: 30px;
 }
 .bar-lateral-direita a{
-    font-family: 'Open Sans Condensed';
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 32px;
     color: white;
     display: block;
@@ -109,20 +109,22 @@ body{
 }
 .section-text{
     padding: 3em 0 3em 0;
-    max-width: 55%;
+    max-width: 50%;
     float: left;
 }
 .section-text h1{
     color: indigo;
-    font-family: 'Pacifico';
+    font-family: 'Pacifico', cursive;
     font-size: 30px;
     font-weight: normal;
     text-align: left;
 }
 .section-text p{
-    font-family: 'Josefin Slab';
+    font-family: 'Josefin Slab', serif;
     font-size: 28px;
     padding: 1em 2em 1em 0;
+    text-align: justify;
+    text-justify: distribute;
 }
 @media (max-width:600px) {
     .menu-superior{
@@ -169,7 +171,7 @@ body{
     }
     .section-text h1{
         color: indigo;
-        font-family: 'Pacifico';
+        font-family: 'Pacifico', cursive;
         font-size: 30px;
         font-weight: normal;
         text-align: center;

@@ -1,11 +1,10 @@
 a{
     color: white;
     margin: 1vw 1vw 0 1vw;
-    display: block;
+    display: inline-block;
     font-size: 10vw;
     text-align: center;
     text-decoration-line: unset;
-    float: left;
 }
 body{
     background: #f1f5c8;
@@ -18,19 +17,21 @@ h1{
     font-weight: normal;
     display: inline;
 }
-a.atividades{
-    background: #1A237E ;
+a{
     width: 98vw;
-    height: 30vh;
+}
+a.atividades{
+    background-color: #1A2340;
 }
 
 a.provas{
-    background-color: #FFAB40 ;
-    width: 98vw;
-    height: 30vh;
+    background-color: #FFAB40;
 }
+
+a.trabalhos{
+    background-color: #40FF40;
+}
+
 a.seminario{
-    background-color: #FF5252;
-    width: 98vw;
-    height: 30vh;
+    background-color: #FF5240;
 }
