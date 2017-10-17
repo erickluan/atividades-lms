@@ -12,10 +12,89 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="page-title">Atividade 05</h1>
-    </header>
-    
+    <nav class="colapsable-menu">
+        <ul>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header">
+            <span class="sandwich">
+                &#9776
+            </span>
+            <h1 class="page-title">
+                Atividade 05
+            </h1>
+        </header>
+        <div class="content">
+            <div class="accordeon">
+                <div class="item-accordeon">
+                    <div class="title-accordeon">
+                        <h1>Titulo</h1>
+                    </div>
+
+                    <div class="body-accordeon">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis metus, egestas ac erat vel, consequat scelerisque
+                            dui. Pellentesque maximus orci eget magna faucibus, quis efficitur mi placerat. Interdum et malesuada
+                            fames ac ante ipsum primis in faucibus. Cras ut ultricies sem, placerat eleifend ligula. Sed
+                            finibus purus sapien. Proin dignissim aliquam ligula eget molestie. Integer dignissim, lacus
+                            a rutrum venenatis, mauris odio condimentum urna, vel tristique lectus nisi vel diam. Donec et
+                            molestie mauris, at luctus tortor.
+                        </span>
+                        <br>
+                        <span>
+                            Vestibulum placerat varius purus, vitae molestie sapien facilisis eu. Cras molestie eleifend augue ut vestibulum. Aliquam
+                            mattis quis dolor at dictum. Suspendisse ut egestas sapien, ut consectetur dolor. Nulla malesuada
+                            orci mauris, quis finibus tellus porta a. In porttitor justo quis enim feugiat vestibulum. Vivamus
+                            suscipit rutrum lacinia. Suspendisse volutpat dui pulvinar risus cursus tristique. Duis tincidunt
+                            rhoncus luctus. Pellentesque tempus vehicula neque vitae rhoncus. Morbi laoreet tincidunt risus,
+                            suscipit convallis augue aliquet id. Maecenas quis magna condimentum, pulvinar odio eu, sodales
+                            est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                        <br>
+                        <span>
+                            Vivamus sem orci, pharetra sed metus sagittis, iaculis viverra sem. Phasellus interdum placerat est, eget condimentum eros
+                            pulvinar ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                            Curae; Vestibulum id quam dapibus, venenatis sapien eu, euismod ipsum. Vestibulum convallis arcu
+                            eget fringilla ultricies. Nullam libero magna, semper et faucibus sed, eleifend sit amet urna.
+                            Aliquam ac metus in libero rhoncus accumsan. Curabitur egestas, erat sed euismod vulputate, metus
+                            mi vehicula urna, at aliquam nulla mauris at neque. Quisque elementum, ex id consequat pellentesque,
+                            elit metus elementum eros, maximus ultrices eros risus vitae velit. Suspendisse faucibus nibh
+                            vitae metus ullamcorper, sed ullamcorper massa iaculis. Donec quis pharetra leo, et pellentesque
+                            diam.Vivamus sem orci, pharetra sed metus sagittis, iaculis viverra sem. Phasellus interdum placerat
+                            est, eget condimentum eros pulvinar ac. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Vestibulum id quam dapibus, venenatis sapien eu, euismod ipsum.
+                            Vestibulum convallis arcu eget fringilla ultricies. Nullam libero magna, semper et faucibus sed,
+                            eleifend sit amet urna. Aliquam ac metus in libero rhoncus accumsan. Curabitur egestas, erat
+                            sed euismod vulputate, metus mi vehicula urna, at aliquam nulla mauris at neque. Quisque elementum,
+                            ex id consequat pellentesque, elit metus elementum eros, maximus ultrices eros risus vitae velit.
+                            Suspendisse faucibus nibh vitae metus ullamcorper, sed ullamcorper massa iaculis. Donec quis
+                            pharetra leo, et pellentesque diam.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let menu = document.querySelector(".colapsable-menu");
+        let sandwich = document.querySelector(".sandwich");
+        let container = document.querySelector(".container");
+
+        sandwich.addEventListener.querySelectorAll("click", function () {
+            menu.classList.toggle(".active")
+        })
+
+    </script>
 </body>
 
 </html>
