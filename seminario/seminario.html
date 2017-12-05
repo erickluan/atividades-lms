@@ -1,16 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="seminario.css">
-    <title>Seminário</title>
+    <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/presentations/images/favicon4.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Overpass+Mono:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="module.css">
+    <link rel="stylesheet" href="layout.css">
+    <title>Guia Flexbox</title>
 </head>
+
 <body>
-    <h1>
-        Seminário
-    </h1>
+    <div class="main-wrapper">
+        <h1>Flex Container</h1>
+        <div class="wrapper" id="flex-direction">
+            <!-- Wrapper of flex-direction -->
+            <h3>flex-direction</h3>
+            <div class="container flex-direction">
+                <div class="inner-container">
+                    <code id="title">row</code>
+                    <div class="fd-row">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">row-reverse</code>
+                    <div class="fd-row-reverse">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">column</code>
+                    <div class="fd-column">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">column-reverse</code>
+                    <div class="fd-column-reverse">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="flex-wrap">
+            <!-- Wrapper of flex-wrap -->
+            <h3>flex-wrap</h3>
+            <div class="container flex-wrap">
+                <div class="inner-container">
+                    <code id="title">nowrap</code>
+                    <div class="fw-nowrap">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6</span>
+                        <span class="item">7</span>
+                        <span class="item">8</span>
+                        <span class="item">9</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">wrap</code>
+                    <div class="fw-wrap">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6</span>
+                        <span class="item">7</span>
+                        <span class="item">8</span>
+                        <span class="item">9</span>
+                        <span class="item">10</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">wrap-reverse</code>
+                    <div class="fw-wrap-reverse">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6</span>
+                        <span class="item">7</span>
+                        <span class="item">8</span>
+                        <span class="item">9</span>
+                        <span class="item">10</span>
+                        <span class="item">11</span>
+                        <span class="item">12</span>
+                        <span class="item">13</span>
+                        <span class="item">14</span>
+                        <span class="item">15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="flex-flow">
+            <!-- Wrapper of flex-flow -->
+            <h3>flex-flow</h3>
+            <div class="container flex-flow">
+                <div class="inner-container">
+                    <code id="title">row wrap</code>
+                    <div class="row-wrap">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6</span>
+                        <span class="item">7</span>
+                        <span class="item">8</span>
+                        <span class="item">9</span>
+                        <span class="item">10</span>
+                        <span class="item">11</span>
+                        <span class="item">12</span>
+                        <span class="item">13</span>
+                        <span class="item">14</span>
+                        <span class="item">15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="justify-content">
+            <!-- Wrapper of justify-content -->
+            <h3>justify-content</h3>
+            <div class="container justify-content">
+                <div class="inner-container">
+                    <code class="language-css" id="title">justify-content: flex-start;</code>
+                    <div class="jc-flex-start">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">justify-content: flex-end;</code>
+                    <div class="jc-flex-end">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">justify-content: center;</code>
+                    <div class="jc-center">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">justify-content: space-between;</code>
+                    <div class="jc-space-between">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">justify-content: space-around;</code>
+                    <div class="jc-space-around">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="align-items">
+            <!-- Wrapper of align-items -->
+            <h3>align-items</h3>
+            <div class="container align-items">
+                <div class="inner-container">
+                    <code id="title">align-items: stretch;</code>
+                    <div class="ai-stretch">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-items: baseline;</code>
+                    <div class="ai-baseline">
+                        <span class="item">4</span>
+                        <i class="material-icons md-72">&#xE838;</i>
+                        <span class="item">6</span>
+                        <span class="item">12</span>
+                        <i class="material-icons md-24">&#xE87D;</i>
+                        <span class="item">14</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-items: center;</code>
+                    <div class="ai-center ">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-items: center;</code>
+                    +
+                    <code id="title">justify-content: center;</code>
+                    <div class="ai-center-justify-content">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-items: flex-start;</code>
+                    <div class="ai-flex-start">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-items: flex-end;</code>
+                    <div class="ai-flex-end">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="align-content">
+            <!-- Wrapper of align-content -->
+            <h3>align-content</h3>
+            <div class="container align-content">
+                <div class="inner-container">
+                    <code id="title">align-content: stretch;</code>
+                    <div class="ac-stretch">
+                        <span class="item">Valor padrão </span>
+                        <span class="item">ele que faz com que </span>
+                        <span class="item">os flex-itens</span>
+                        <span class="item">cresçam igualmente</span>
+                        <span class="item">na vertical</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-content: center;</code>
+                    <div class="ac-center fw-wrap">
+                        <span class="item">1</span>
+                        <span class="item">Alinha todas as linhas de itens ao centro</span>
+                        <span class="item">3</span>
+                        <span class="item">4 Alinhando todos os itens</span>
+                        <span class="item">5</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-content: flex-start;</code>
+                    <div class="ac-flex-start fw-wrap">
+                        <span class="item">1</span>
+                        <span class="item">Cara meu amigo</span>
+                        <span class="item">Ainda estamos no início...</span>
+                        <span class="item">O que podemos fazer pra chegar</span>
+                        <span class="item">até o final???</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-content: flex-end;</code>
+                    <div class="ac-flex-end fw-wrap">
+                        <span class="item">1º - Mude o valor de flex-start</span>
+                        <span class="item">2º - Coloque o valor de flex-end</span>
+                        <span class="item">3º - Agora é só curtir e relaxar</span>
+                        <span class="item">4º - Tudo ok, né?</span>
+                        <span class="item">Sim!!!!</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-content: space-between;</code>
+                    <div class="ac-space-between fw-wrap">
+                        <span class="item">1 teste</span>
+                        <span class="item">2 lorem imps pasopoema </span>
+                        <span class="item">3 asklaqp ak</span>
+                        <span class="item">4</span>
+                        <span class="item">5 akslask</span>
+                        <span class="item">6</span>
+                        <span class="item">7kalsks </span>
+                        <span class="item">8asaklqpqo</span>
+                        <span class="item">9</span>
+                        <span class="item">10</span>
+                        <span class="item">11</span>
+                        <span class="item">12asklask </span>
+                        <span class="item">13</span>
+                        <span class="item">14</span>
+                        <span class="item">15</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-content: space-around;</code>
+                    <div class="ac-space-around fw-wrap">
+                        <span class="item">1</span>
+                        <span class="item">2 e aí cara, bleza?</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6 asklapqei</span>
+                        <span class="item">7</span>
+                        <span class="item">8</span>
+                        <span class="item">9</span>
+                        <span class="item">10aklaksk as</span>
+                        <span class="item">11</span>
+                        <span class="item">12</span>
+                        <span class="item">13</span>
+                        <span class="item">14</span>
+                        <span class="item">15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Flex Item</h1>
+        <div class="wrapper" id="flex-grow">
+            <!-- Wrapper of flex-grow-->
+            <h3>flex-grow</h3>
+            <div class="container">
+                <div class="inner-container">
+                    <code id="title">flex-grow: 0;</code>
+                    <div class="flex-grow fw-wrap">
+                        <span class="item fg0">1</span>
+                        <span class="item fg0">2</span>
+                        <span class="item fg0">3</span>
+                        <span class="item fg0">4</span>
+                        <span class="item fg0">5</span>
+                        <span class="item fg0">6</span>
+                        <span class="item fg0">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-grow: 1;</code>
+                    <div class="flex-grow fw-wrap">
+                        <span class="item fg1">1</span>
+                        <span class="item fg1">2</span>
+                        <span class="item fg1">3</span>
+                        <span class="item fg1">4</span>
+                        <span class="item fg1">5</span>
+                        <span class="item fg1">6</span>
+                        <span class="item fg1">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-grow: 2;</code>
+                    <div class="flex-grow fw-wrap">
+                        <span class="item fg2">1</span>
+                        <span class="item fg2">2</span>
+                        <span class="item fg2">3</span>
+                        <span class="item fg2">4</span>
+                        <span class="item fg2">5</span>
+                        <span class="item fg2">6</span>
+                        <span class="item fg2">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-grow: 3 | 2 | 4</code>
+                    <div class="flex-grow fw-wrap">
+                        <span class="item fg3">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item fg1">4</span>
+                        <span class="item">5</span>
+                        <span class="item fg4">6</span>
+                        <span class="item">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-grow: 4(único) </code>
+                    <div class="flex-grow fw-wrap">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item fg4">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6</span>
+                        <span class="item">7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="flex-basis">
+            <!-- Wrapper of flex-basis-->
+            <h3>flex-basis</h3>
+            <div class="container">
+                <div class="inner-container">
+                    <code id="title">flex-basis: auto;</code>
+                    <div class="flex-basis fw-wrap">
+                        <span class="item fg1 fb-auto">1</span>
+                        <span class="item fg1 fb-auto">2</span>
+                        <span class="item fg1 fb-auto">3</span>
+                        <span class="item fg1 fb-auto">4</span>
+                        <span class="item fg1 fb-auto">5</span>
+                        <span class="item fg1 fb-auto">6</span>
+                        <span class="item fg1 fb-auto">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-basis: 100px;</code>
+                    <code id="title">flex-wrap: wrap;</code>
+                    <div class="flex-basis fw-wrap">
+                        <span class="item fb-100px">1</span>
+                        <span class="item fb-100px">2</span>
+                        <span class="item fb-100px">3</span>
+                        <span class="item fb-100px">4</span>
+                        <span class="item fb-100px">5</span>
+                        <span class="item fb-100px">6</span>
+                        <span class="item fb-100px">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-basis: 100px;</code>
+                    <code id="title">flex-grow: 1;</code>
+                    <code id="title">flex-wrap: wrap;</code>
+                    <div class="flex-basis fw-wrap">
+                        <span class="item fg1 fb-100px">1</span>
+                        <span class="item fg1 fb-100px">2</span>
+                        <span class="item fg1 fb-100px">3</span>
+                        <span class="item fg1 fb-100px">4</span>
+                        <span class="item fg1 fb-100px">5</span>
+                        <span class="item fg1 fb-100px">6</span>
+                        <span class="item fg1 fb-100px">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-basis: 0;</code>
+                    <div class="flex-basis fw-wrap">
+                        <span class="item fb0">1</span>
+                        <span class="item fb0">2</span>
+                        <span class="item fb0">3</span>
+                        <span class="item fb0">4</span>
+                        <span class="item fb0">5</span>
+                        <span class="item fb0">6</span>
+                        <span class="item fb0">7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="flex-shrink">
+            <!-- Wrapper of flex-shrink-->
+            <h3>flex-shrink</h3>
+            <div class="container flex-shrink">
+                <div class="inner-container">
+                    <code id="title">flex-shrink: 1;</code>
+                    <code id="title">flex-grow: 1;</code>
+                    <div class="flex-shrink fw-wrap">
+                        <span class="item fg1 fs1">1</span>
+                        <span class="item fg1 fs1">2</span>
+                        <span class="item fg1 fs1">3</span>
+                        <span class="item fg1 fs1">4</span>
+                        <span class="item fg1 fs1">5</span>
+                        <span class="item fg1 fs1">6</span>
+                        <span class="item fg1 fs1">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-wrap: wrap;</code>
+                    <code id="title">flex-shrink: 0;</code>
+                    <code id="title">flex-grow: 1;</code>
+                    <div class="flex-shrink fw-wrap">
+                        <span class="item fg1 fs0">1</span>
+                        <span class="item fg1 fs0">2 teste</span>
+                        <span class="item fg1 fs0">3</span>
+                        <span class="item fg1 fs0">4 tstanadooias</span>
+                        <span class="item fg1 fs0">5</span>
+                        <span class="item fg1 fs0">6 caspeoae</span>
+                        <span class="item fg1 fs0">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-wrap: wrap;</code>
+                    <code id="title">flex-shrink: 2;</code>
+                    <code id="title">flex-grow: 1;</code>
+                    <code id="title">flex-basis: 300px;</code>
+                    <div class="flex-shrink fw-wrap">
+                        <span class="item fg1 fs2 fb-100px">1</span>
+                        <span class="item fg1 fs2 fb-250px">2Aquierapra ser poesia</span>
+                        <span class="item fg1 fs2 fb-100px">3</span>
+                        <span class="item fg1 fs2 fb-300px">4 Aqui tem que ser um texto maior</span>
+                        <span class="item fg1 fs2 fb-100px">5</span>
+                        <span class="item fg1 fs2 fb-100px">6</span>
+                        <span class="item fg1 fs2 fb-100px">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex-wrap: wrap;</code>
+                    <code id="title">flex-shrink: 0;</code>
+                    <code id="title">flex-grow: 1;</code>
+                    <code id="title">flex-basis: 100px;</code>
+                    <div class="flex-shrink fw-wrap">
+                        <span class="item fg1 fs0 fb-100px">1</span>
+                        <span class="item fg1 fs0 fb-100px">TesteTesteTeste2</span>
+                        <span class="item fg1 fs0 fb-100px">3</span>
+                        <span class="item fg1 fs0 fb-100px">4 Aqui tem que ser um texto maior</span>
+                        <span class="item fg1 fs0 fb-100px">5</span>
+                        <span class="item fg1 fs0 fb-100px">6</span>
+                        <span class="item fg1 fs0 fb-100px">7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="flex">
+            <!-- Wrapper of flex-->
+            <h3>flex</h3>
+            <div class="container flex">
+                <div class="inner-container">
+                    <code id="title">flex: n 1 auto;</code>
+                    <div class="fw-wrap">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6</span>
+                        <span class="item">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex: 1;</code>
+                    <div class="fw-wrap">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6</span>
+                        <span class="item">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">flex: n 1 auto;</code>
+                    <div class="fw-wrap">
+                        <span class="item">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item">4</span>
+                        <span class="item">5</span>
+                        <span class="item">6</span>
+                        <span class="item">7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="order">
+            <!-- Wrapper of order-->
+            <h3>order</h3>
+            <div class="container">
+                <div class="inner-container">
+                    <code id="title">order: 0;</code>
+                    <div class="order ai-center jc-center">
+                        <span class="item order0">1</span>
+                        <span class="item order0">2</span>
+                        <span class="item order0">3</span>
+                        <span class="item order0">4</span>
+                        <span class="item order0">5</span>
+                        <span class="item order0">6</span>
+                        <span class="item order0">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">order: 3 | 4 | 1 | -1 | 4 | 4 | -4 ;</code>
+                    <div class="order ai-center jc-center">
+                        <span class="item order3">1</span>
+                        <span class="item order4">2</span>
+                        <span class="item order1">3</span>
+                        <span class="item order-1">4</span>
+                        <span class="item order4">5</span>
+                        <span class="item order4">6</span>
+                        <span class="item order-4">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">order: 2 | 1 | 0 | -1 | -2 | -3 | -4 ;</code>
+                    <div class="order ai-center jc-center">
+                        <span class="item order2">1</span>
+                        <span class="item order1">2</span>
+                        <span class="item order0">3</span>
+                        <span class="item order-1">4</span>
+                        <span class="item order-2">5</span>
+                        <span class="item order-3">6</span>
+                        <span class="item order-4">7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="align-self">
+            <!-- Wrapper of align-self-->
+            <h3>align-self</h3>
+            <div class="container align-self">
+                <div class="inner-container">
+                    <code id="title">align-items: flex-start;</code>
+                    <code id="title">align-self</code>
+                    <div class="ai-flex-start">
+                        <span class="item as-center">1</span>
+                        <span class="item">2</span>
+                        <span class="item">3</span>
+                        <span class="item as-flex-end">4</span>
+                        <span class="item">5</span>
+                        <span class="item as-stretch">6</span>
+                        <span class="item as-stretch">7</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-items: flex-end;</code>
+                    <code id="title">align-self</code>
+                    <div class="ai-flex-end fd-column">
+                        <span class="item as-stretch">1</span>
+                        <span class="item as">2</span>
+                        <span class="item as">3</span>
+                        <span class="item as">4</span>
+                        <span class="item as">5</span>
+                        <span class="item as">6</span>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <code id="title">align-items: center;</code>
+                    <code id="title">align-self</code>
+                    <div class="ai-center">
+                        <span class="item as-flex-end">1</span>
+                        <span class="item as-stretch">2</span>
+                        <span class="item as-center">3</span>
+                        <span class="item as-stretch">4</span>
+                        <span class="item as-stretch">5</span>
+                        <span class="item as-stretch">6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>

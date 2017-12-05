@@ -1,0 +1,21 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.brand-header{
+    background-color:#555553;
+}
+h3.title{
+    font-variant-caps: small-caps;
+    color: #3e2723;
+}
+.nav-menu ul, .nav-menu li{
+    list-style: none;
+}
+a{
+    text-decoration-line: none;
+    color: #5d4037;
+}
+a:hover, h3.title:hover{
+    color: #8d6e63;
+    text-decoration-line: underline;
+}

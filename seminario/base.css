@@ -1,0 +1,66 @@
+/*Arquivo CSS com estilo base para os elementos do site.*/
+
+* {
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: 300ms all linear;
+}
+
+html {
+    background-color: #f4032f;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+code, p, li {
+    padding: 10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    font-family: 'Overpass Mono', monospace;
+    margin-top: 147px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover {
+    color: #212121;
+    border-bottom: 2px dotted #212121;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+a {
+    color: #fefc02;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}

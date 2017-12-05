@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Vendendo.com</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Vendendo.com</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown login">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Entrar
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu col-xs-12" style="width: 350px !important;">
+                            <div class="container-fluid">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputEmailLogin" class="col-sm-2 control-label">Usuário</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" required="" class="form-control" id="inputEmailLogin" placeholder="Ex: email@domain.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPasswordLogin" class="col-sm-2 control-label">Senha</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" required="" class="form-control" id="inputPasswordLogin" placeholder="Sua senha">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-success">Entrar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown register">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastrar-se
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu col-xs-12" style="width: 350px !important;">
+                            <li>
+                                <div class="container-fluid">
+                                    <div class="form-horizontal" novalidate>
+                                        <div class="form-group">
+                                            <label for="inputEmailRegister" class="col-sm-2 control-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputEmailRegister" placeholder="Ex: email@domain.com">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPasswordRegister" class="col-sm-2 control-label">Senha</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputPasswordRegister" placeholder="Necessário ter mais de 6 caracteres">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button class="btn btn-primary" onclick="cadastrar()">Cadastrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default navbar-btn">
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('.carousel').carousel({
+                interval: 2000
+            });
+            $('.right.carousel-control').trigger('click');
+        });
+    </script>
+</body>
+
+</html>

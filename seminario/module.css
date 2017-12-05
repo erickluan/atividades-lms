@@ -1,0 +1,137 @@
+/*PARTES REUTILIZÁVEIS DO ESTILO*/
+/*No wrapper é colocado todo o conteúdo/seção ligada a um único atributo.*/
+.wrapper, .item {
+    align-items: center;
+    justify-content: center;
+}
+
+/*No container coloca-se o código e o valor relacionado a cada atributo estudado.*/
+.container {
+    width: 100%;
+}
+
+.container *:hover {
+    background-color: rgba(1, 1, 1, 0.5);
+}
+
+.container>* {
+    margin: auto;
+    text-align: center;
+}
+
+.inner-container {
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.wrapper .container .inner-container div {
+    box-sizing: border-box;
+    width: 500px;
+    height: 350px;
+}
+
+.fd-row,
+.fd-row-reverse,
+.fd-column,
+.fd-column-reverse,
+.fw-nowrap,
+.fw-wrap,
+.fw-wrap-reverse,
+.row-wrap,
+.jc-flex-start,
+.jc-flex-end,
+.jc-center,
+.jc-space-between,
+.jc-space-around,
+.ai-stretch,
+.ai-baseline,
+.ai-center,
+.ai-center-justify-content,
+.ai-flex-end,
+.ai-flex-start,
+.ac-stretch,
+.ac-baseline,
+.ac-center,
+.ac-flex-end,
+.ac-flex-start,
+.ac-space-around,
+.ac-space-between,
+.ai-baseline {
+    border: 2px solid #212121;
+}
+
+.fd-row:hover,
+.fd-row-reverse:hover,
+.fd-column:hover,
+.fd-column-reverse:hover,
+.fw-nowrap:hover,
+.fw-wrap:hover,
+.fw-wrap-reverse:hover,
+.row-wrap:hover,
+.jc-flex-start:hover,
+.jc-flex-end:hover,
+.jc-center:hover,
+.jc-space-between:hover,
+.jc-space-around:hover,
+.ai-stretch:hover,
+.ai-baseline:hover,
+.ai-center:hover,
+.ai-center-justify-content:hover,
+.ai-flex-end:hover,
+.ai-flex-start:hover,
+.ac-stretch:hover,
+.ac-baseline:hover,
+.ac-center:hover,
+.ac-flex-end:hover,
+.ac-flex-start:hover,
+.ac-space-around:hover,
+.ac-space-between:hover {
+    border: 2px solid #ffffff;
+}
+
+.ai-stretch,
+.ai-baseline,
+.ai-center,
+.ai-center-justify-content,
+.ai-flex-end,
+.ai-flex-start {
+    flex-wrap: wrap;
+}
+
+.ai-stretch>.item {
+    height: auto;
+    width: auto;
+}
+
+.align-content .item {
+    width: auto;
+    height: auto;
+}
+
+.item {
+    background-color: #0343f4;
+    padding: 15px;
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+.material-icons.md-72 {
+    font-size: 72px;
+}

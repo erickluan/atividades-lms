@@ -1,0 +1,360 @@
+.inner-wrapper,
+.main-wrapper,
+.wrapper,
+.container,
+.flex-direction,
+.fd-row,
+.fd-row-reverse,
+.fd-column,
+.fd-column-reverse,
+.flex-wrap,
+.fw-nowrap,
+.fw-wrap,
+.fw-wrap-reverse,
+.flex-flow,
+.row-wrap,
+.justify-content,
+.jc-flex-start,
+.jc-flex-end,
+.jc-center,
+.jc-space-between,
+.jc-space-around,
+.flex-item--flex-flow,
+.align-items,
+.ai-stretch,
+.ai-baseline,
+.ai-center,
+.ai-center-justify-content,
+.ai-flex-end,
+.ai-flex-start,
+.ac-stretch,
+.ac-center,
+.ac-flex-end,
+.ac-flex-start,
+.ac-space-between,
+.ac-space-around,
+.order,
+.flex-grow,
+.flex-shrink,
+.flex-basis,
+.flex,
+.align-self,
+#title {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.main-wrapper,
+.wrapper,
+.container {
+    flex-direction: column;
+}
+
+#title {
+    align-items: center;
+    justify-content: center;
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+.fd-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+.fd-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.fw-nowrap {
+    flex-wrap: nowrap;
+}
+
+.fw-wrap {
+    flex-wrap: wrap;
+}
+
+.fw-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+    width: 300px;
+}
+
+.justify-content{
+    flex-flow: column;
+}
+
+.jc-flex-start,
+.jc-flex-end,
+.jc-center,
+.jc-space-between,
+.jc-space-around {
+    width: 350px;
+    height: 100px;
+}
+
+.jc-flex-start {
+    justify-content: flex-start;
+}
+
+.jc-flex-end {
+    justify-content: flex-end;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-space-around {
+    justify-content: space-around;
+}
+
+.ai-baseline {
+    align-items: baseline;
+}
+
+.ai-stretch {
+    align-items: stretch;
+}
+
+.ai-flex-start {
+    align-items: flex-start;
+}
+
+.ai-flex-end {
+    align-items: flex-end;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-center-justify-content {
+    align-items: center;
+    justify-content: center;
+}
+
+.ac-stretch {
+    align-content: stretch;
+}
+
+.ac-center {
+    align-content: center;
+}
+
+.ac-flex-start {
+    align-content: flex-start;
+}
+
+.ac-flex-end {
+    align-content: flex-end;
+}
+
+.ac-space-around {
+    align-content: space-around;
+}
+
+.ac-space-between {
+    align-content: space-between;
+}
+
+.order-4 {
+    order: -4;
+}
+
+.order-3 {
+    order: -3;
+}
+
+.order-2 {
+    order: -2;
+}
+
+.order-1 {
+    order: -1;
+}
+
+.order0 {
+    order: 0;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4 {
+    order: 4;
+}
+
+.fg0 {
+    flex-grow: 0;
+}
+
+.fg1 {
+    flex-grow: 1;
+}
+
+.fg2 {
+    flex-grow: 2;
+}
+
+.fg3 {
+    flex-grow: 3;
+}
+
+.fg4 {
+    flex-grow: 4;
+}
+
+.fs0 {
+    flex-shrink: 0;
+}
+
+.fs1 {
+    flex-shrink: 1;
+}
+
+.fs2 {
+    flex-shrink: 2;
+}
+
+.fs3 {
+    flex-shrink: 3;
+}
+
+.fs4 {
+    flex-shrink: 4;
+}
+
+.fb-auto {
+    flex-basis: auto;
+}
+
+.fb-100px {
+    flex-basis: 100px;
+}
+
+.fb-200px {
+    flex-basis: 200px;
+}
+
+.fb-250px {
+    flex-basis: 250px;
+}
+
+.fb-300px {
+    flex-basis: 300px;
+}
+
+.fb0 {
+    flex-basis: 0;
+}
+
+.as-auto {
+    align-self: auto;
+}
+
+.as-flex-start {
+    align-self: flex-start;
+}
+
+.as-flex-end {
+    align-self: flex-end;
+}
+
+.as-center {
+    align-self: center;
+}
+
+.as-baseline {
+    align-self: baseline;
+}
+
+.as-stretch {
+    align-self: stretch;
+}
+
+/* FLEX BASIS AUTO */
+
+.basis-auto {
+	flex: 1 1 auto;
+}
+
+.basis-auto-grow-2 {
+	flex: 2 1 auto;
+}
+
+.basis-auto-width {
+	flex: 1 1 auto;
+	width: 60px;
+}
+
+.basis-auto-grow-0 {
+	flex: 0 1 auto;
+}
+
+/* FLEX BASIS AUTO FIM */
+
+/* FLEX BASIS 0 */
+
+.basis-0 {
+	flex: 1;
+}
+
+/* O tamanho total é de duas vezes dos itens com flex: 1; */
+.basis-0-grow-2 {
+	flex: 2;
+}
+
+.basis-0-width {
+	flex: 1;
+	width: 120px;
+	min-width: 80px;
+}
+
+.basis-0-grow-0 {
+	flex: 0 1 0;
+}
+
+/* FLEX BASIS 0 FIM */
+
+.basis-110 {
+	flex: 0 1 110px;
+}
+
+.basis-300 {
+	flex: 0 1 300px;
+}
+
+.basis-110-porcento {
+	flex: 0 1 calc(25% - 10px);
+}
+
+.basis-110-grow-1 {
+	flex: 1 1 110px;
+}
+
+.basis-600-grow-1 {
+	flex: 1 1 600px;
+}
